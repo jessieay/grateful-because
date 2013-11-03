@@ -10,7 +10,8 @@ class ItemsController < ApplicationController
   end
 
   def create
-    respond_with Item.create(item_params)
+    entry = current_user.entries.find_or_create_by(created_at: Date.today)
+    respond_with entry.items.create(item_params)
   end
 
   def update
