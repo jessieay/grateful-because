@@ -1,3 +1,4 @@
 GratefulBecause::Application.routes.draw do
-  root to: 'entry#index'
+  resources :entries
+  root to: 'entries#index'
 end

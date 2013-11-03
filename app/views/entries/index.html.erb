@@ -1,0 +1,12 @@
+<div ng-controller="ItemCtrl">
+  <form ng-submit="addItem()">
+    <input type="text" ng-model="newItem.description">
+    <input type="submit" value="Add">
+  </form>
+
+   <ul>
+    <li ng-repeat="item in items">
+      {{item.description}}
+    </li>
+  </ul>
+</div>
