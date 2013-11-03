@@ -10,11 +10,11 @@ class ItemsController < ApplicationController
   end
 
   def create
-    respond_with Item.create(entry_params)
+    respond_with Item.create(item_params)
   end
 
   def update
-    respond_with Item.update(params[:id], entry_params)
+    respond_with Item.update(params[:id], item_params)
   end
 
   def destroy
