@@ -3,6 +3,8 @@
 *.swo
 *.swp
 .bundle
+.env
+.foreman
 .sass-cache/
 bin/stubs
 coverage/*
